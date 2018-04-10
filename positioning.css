@@ -110,6 +110,10 @@ a {
   line-height: 60px;
 }
 
+.container {
+  position: relative;
+}
+
 .container::after {
   clear: both;
   content: "";
@@ -126,8 +130,70 @@ a.block {
   line-height: 2rem;
 }
 
+.nav-example {
+  display: block;
+  text-align: center;
+}
+
+a.inline-block {
+  background-color: dodgerblue;
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100px;
+  line-height: 25px;
+  padding: 10px;
+  text-align: center;
+  margin: 20px;
+}
+
+.fifty-percent {
+  height: 50px;
+  line-height: 50px;
+  width: 48%;
+  margin: 1%;
+  text-align: center;
+}
+
+.hundred-percent {
+  clear: both;
+  background-color: orange;
+  width: 98%;
+  height: 30px;
+  line-height: 30px;
+  margin: 1%;
+  text-align: center;
+}
+
 .todo {
   background-color: yellow;
   margin: 50px;
   padding: 50px;
+}
+
+.round-box {
+  background-color: red;
+  width: 200px;
+  padding: 0 30px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+  left: -50px;
+  top: 50px;
+}
+
+.absolute {
+  position: relative;
+  left: 220px;
+  top: -180px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
 }
