@@ -1,0 +1,39 @@
+/* Create a section element with a fixed width of 750px, and horizontally center it on the page using CSS margins. Create two columns inside it, a 500px-wide article and a 250px-wide aside, positioned side-by-side with CSS floats. The left column should contain the article. Each column should have 1rem of whitespace between the text and edges of the container. Add some background colors to the body, section, article, and aside body so you can see the boundaries of each element. */
+
+p {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+body {
+  background-color: yellow;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: orange;
+}
+
+article, aside {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+article {
+  float: left;
+  width: 70%;
+  background-color: red;
+}
+
+aside {
+  float: none;
+  background-color: gray;
+  overflow: hidden;
+}
+
+footer {
+  clear: both;
+  background-color: white;
+  padding: 1rem;
+}

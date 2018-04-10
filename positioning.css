@@ -1,0 +1,133 @@
+body {
+  font-family: helvetica, "sans serif";
+}
+
+main {
+  width: 1000px;
+  border: 1px solid black;
+  margin: 1rem auto;
+  padding: 3rem 1.5rem;
+}
+
+p {
+  line-height: 2rem;
+}
+
+h2, h3, h4 {
+  color: orange;
+}
+
+.inline-example {
+  box-sizing: border-box;
+  width: 600px;
+  margin-left: 100px;
+  border: 1px dashed black;
+  padding-left: 50px;
+}
+
+a {
+  background-color: gray;
+  line-height: 80px;
+  text-decoration: none;
+  color: black;
+}
+
+.inline-example a.with-margin {
+  margin: 15px 30px;
+}
+
+.inline-example a.with-padding {
+  background-color: gray;
+  padding: 40px 40px;
+}
+
+.inline-example a.floated {
+  box-sizing: border-box;
+  float: left;
+  padding: 0 30px;
+  border: 2px solid black;
+  height: 200px;
+  line-height: 200px;
+}
+
+.clear::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.box {
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+.with-height {
+  box-sizing: border-box;
+  background-color: gray;
+  color: white;
+  height: 60px;
+  line-height: 18px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.with-width {
+  width: 60px;
+  background-color: gray;
+  color: white;
+}
+
+.with-width-and-height {
+  overflow: hidden;
+  font-size: 1.1rem;
+  background-color: gray;
+  width: 180px;
+  height: 75px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.float-left {
+  float: left;
+  background-color: orange;
+}
+
+.float-left.with-dimensions {
+  width: 40%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.float-right {
+  float: right;
+  background-color: orange;
+}
+
+.float-right.with-dimensions {
+  width: 50%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: block;
+  margin-bottom: 10px;
+}
+
+a.block {
+  color: white;
+  background-color: orange;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  line-height: 2rem;
+}
+
+.todo {
+  background-color: yellow;
+  margin: 50px;
+  padding: 50px;
+}

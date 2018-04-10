@@ -1,0 +1,108 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+p {
+  margin: 3px 0;
+  padding: 0;
+  line-height: 35px;
+}
+
+main {
+  margin: auto;
+  box-sizing: border-box;
+  width: 680px;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+article {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Franklin Gothic Heavy", Arial, sans-serif;
+  font-size: 90px;
+  line-height: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  font-size: 25px;
+  padding: 15px;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+
+li:before {
+  content: "*";
+  position: absolute;
+  left: -15px;
+}
+
+table {
+  border-top: 30px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table:first-of-type {
+
+}
+
+table:nth-of-type(2) {
+  border-top: 15px solid black;
+}
+
+table:nth-of-type(3) {
+
+}
+
+table:last-of-type {
+  border-top: 0;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+td {
+  font-weight: normal;
+  text-align: left;
+  padding: 3px 0;
+}
+
+td:last-of-type {
+  text-align: right;
+}
+
+table:last-of-type td:last-of-type {
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid black;
+}
+
+tr:last-of-type td {
+  border-bottom: 0;
+}
+
+td.indent {
+  width: 40px;
+  border-bottom: 0;
+}
+
+table:last-of-type tr td {
+  border-bottom: 0;
+}
+
+table:last-of-type tr:first-of-type td {
+  border-bottom: 1px solid black;
+}
