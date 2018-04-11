@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font: normal 24px Helvetica, Arial, sans-serif;
 }
@@ -8,8 +13,8 @@ header, h1 {
 }
 
 header {
-  padding: 1rem;
   text-align: center;
+  padding: 1rem;
 }
 
 nav {
@@ -70,4 +75,81 @@ footer {
 
 #logo {
   background-color: orange;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+#article-1 {
+  grid-area: article-1;
+}
+
+#article-2 {
+  grid-area: article-2;
+}
+
+#aside-1 {
+  grid-area: aside-1;
+}
+
+#aside-2 {
+  grid-area: aside-2;
+}
+
+#aside-3 {
+  grid-area: aside-3;
+}
+
+footer {
+  grid-area: footer;
+}
+
+body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+     "header header header header"
+     "nav nav nav nav"
+     "aside-1 article-1 article-1 aside-2"
+     "aside-3 article-2 article-2 article-2"
+     "footer footer footer footer";
+}
+
+img {
+  width: 100%;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#logo {
+  grid-area: logo;
+}
+
+#copyright {
+  grid-area: copyright;
+}
+
+#logo img {
+  display: block;
+}
+
+#copyright {
+  line-height: 100%;
+  text-align: right;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "logo copyright copyright copyright";
+  align-items: center;
 }
