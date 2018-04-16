@@ -39,8 +39,9 @@ h2 {
 }
 
 h1::before, h1::after {
-  padding: 0 33px;
-  content: "\2219";
+  font-size: 30px;
+  padding: 0 25px;
+  content: "\2022";
 }
 
 article:first-of-type {
