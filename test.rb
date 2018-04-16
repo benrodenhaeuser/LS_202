@@ -1,13 +1,7 @@
-d=[30644250780,9003106878,
-    30636278846,66641217692,4501790980,
- 671_24_603036,131_61973916,66_606629_920,
-   30642677916,30643069058];a,s=[],$*[0]
-      s.each_byte{|b|a<<("%036b"%d[b.
-         chr.to_i]).scan(/\d{6}/)}
-          a.transpose.each{ |a|
-            a.join.each_byte{\
-             |i|print i==49?\
-               ($*[1]||"#")\
-                 :32.chr}
-                   puts
-                    }
+def rotate_array(array)
+  array.map.each_with_index do |el, idx|
+    idx == array.size - 1 ? array.first : array[idx + 1]
+  end
+end
+
+p rotate_array([1, 2, 3])

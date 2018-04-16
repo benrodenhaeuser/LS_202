@@ -1,0 +1,129 @@
+/* TODO: */
+/* footer (copyright),dropshadow for main, background gradient */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img.fullwidth {
+  display: block;
+}
+
+html {
+  background-color: #d3dcbf;
+}
+
+body {
+  width: 960px;
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  padding-bottom: 68px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 28px 0 20px 0;
+}
+
+p {
+  margin-bottom: 18px;
+  line-height: 23.5px;
+}
+
+p.comment {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  font-family: monospace;
+  background-color: yellow;
+}
+
+main {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 30px;
+}
+
+img.floated {
+  box-sizing: border-box;
+  float: right;
+  margin-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 18px;
+}
+
+header::after, main::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.icon {
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+h2.brandname {
+  margin: 0;
+  line-height: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 11px;
+  padding-top: 59px;
+  font-size: 36px;
+  color: #193441;
+}
+
+nav {
+  position: absolute;
+  top: -45px; /* todo: measure */
+  right: 20px; /* todo: measure */
+}
+
+nav li {
+  background-color: #fcfff5;
+  list-style-type: none;
+  display: inline-block;
+  width: 128px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin-left: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+nav li a {
+  display: block; /* makes the entire area clickable */
+  text-decoration: none;
+  color: rgb(145, 170, 157);
+}
+
+nav li.active {
+  background-color: #91aa9d;
+}
+
+nav li.active a {
+  text-decoration: none;
+  color: rgb(252, 255, 245);
+}
+
+header {
+  height: 140px;
+}
+
+footer {
+  position: absolute;
+  bottom: -52px;
+  left: 0;
+}
+
+p.copyright {
+  font-size: 15px;
+}
