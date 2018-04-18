@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <title>Space Design | Team</title>
+  <meta charset="UTF-8" />
+  <link href="css/whitespace-reset.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="images/logo.png" alt="Space Design" title="Space Design" />
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li class="active"><a href="#">Team</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="team">
+    <h2>Team</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniadolor.
+    </p>
+    <ul>
+      <li>
+        <figure>
+          <img class="team" src="images/img_kevin.jpg" alt="Kevin" />
+          <figcaption>Name</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img class="team" src="images/img_louis.jpg" alt="Louis" />
+          <figcaption>Name</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img class="team" src="images/img_kasper.jpg" alt="Kasper" />
+          <figcaption>Name</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img class="team" src="images/img_chris.jpg" alt="Chris" />
+          <figcaption>Name</figcaption>
+        </figure>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <p>
+      Lorem ipsum dolor sit amet, consectetu incididunt ut labore et dolore magna aliqua. Ut enim ad.
+    </p>
+    <ul>
+      <li><a class="twitter" href="#">Twitter</a></li>
+      <li><a class="facebook" href="#">Facebook</a></li>
+      <li><a class="email" href="#">Email</a></li>
+      <li><a class="instagram" href="#">Instagram</a></li>
+    </ul>
+  </footer>
+
+  <section class="overlay">
+    <article>
+      <img class="close" src="images/icon_close.png" alt="" />
+      <figure>
+        <img class="team" src="images/img_kevin.jpg" alt="Kevin" />
+        <figcaption>Name</figcaption>
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".team").click(function() { $(".overlay").css("display", "block"); });
+    });
+    $(document).ready(function() {
+      $(".close").click(function() { $(".overlay").css("display", "none"); });
+    });
+  </script>
+</body>
+</html>
