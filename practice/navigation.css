@@ -1,0 +1,32 @@
+html {
+  font-size: 20px;
+}
+
+nav ul {
+  width: 100%;
+  background-color: yellow;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  width: 25%;
+  display: inline-block;
+  color: blue;
+}
+
+nav a {
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 2.5;
+  padding: 0 10px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: #177D25;
+  color: yellow;
+}
